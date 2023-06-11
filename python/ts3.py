@@ -8,7 +8,7 @@ import numpy as np
 import scipy.signal as sig
 
 from pytc2.sistemas_lineales import pzmap, GroupDelay, bodePlot
-##%matplotlib qt5
+%matplotlib qt5
 
 
 #Funciones de aproximacion por maxima planicidad
