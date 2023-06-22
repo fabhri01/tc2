@@ -1,0 +1,62 @@
+* C:\users\fabri\Mis Documentos\TC2\LTspice\TS4\TS4bis²\TS4bis2_activo.asc
+Rb1 N001 N003 {Rb1}
+Rc1 0 N001 {Rc1}
+R11 N001 N004 {R11}
+R31 N002 Vo1 {R11}
+R41 Vo1 N005 {R11}
+R51 N005 0 {R11}
+C11 N001 0 {C}
+C21 N002 N004 {C}
+XU1 N002 N001 Vo1 opamp Aol=100K GBW=10Meg
+XU2 N002 N005 N004 opamp Aol=100K GBW=10Meg
+V1 N003 0 AC 1 0
+Rb2 N006 Vo1 {Rb2}
+Rc2 0 N006 {Rc2}
+R12 N006 N008 {R12}
+R32 N007 Vo2 {R12}
+R42 Vo2 N009 {R12}
+R52 N009 0 {R12}
+C12 N006 0 {C}
+C22 N007 N008 {C}
+XU3 N007 N006 Vo2 opamp Aol=100K GBW=10Meg
+XU4 N007 N009 N008 opamp Aol=100K GBW=10Meg
+Rb3 N010 Vo2 {Rb3}
+Rc3 0 N010 {Rc3}
+R13 N010 N012 {R13}
+R33 N011 Vo {R13}
+R43 Vo N013 {R13}
+R53 N013 0 {R13}
+C13 N010 0 {C}
+C23 N011 N012 {C}
+XU5 N011 N010 Vo opamp Aol=100K GBW=10Meg
+XU6 N011 N013 N012 opamp Aol=100K GBW=10Meg
+XU7 N014 Vo Vok opamp Aol=100K GBW=10Meg
+RK1 N014 0 {RK1}
+RK2 Vok N014 {RK2}
+.lib opamp.sub
+.param f = 1
+.param wo=2*pi*f
+.ac dec 10k 0.1 10
+.param wo_1 = 1  Q1 = 7.981 K1 = 1.207
+.param C = 1/wo
+.param R11 = 1/wo_1
+.param Rb1 = Ra1/a1
+.param a1 = K1/2
+.param Rc1 = Ra1/(1-a1)
+.param wo_2 = 0.903 Q2 = 16.05 K2r = 2.045 K2 = 1
+.param R12 = 1/wo_2
+.param Rb2 = Ra2/a2
+.param a2 = K2/2
+.param Rc2 = Ra2/(1-a2)
+.param wo_3 = 1.107  Q3 = 16.05 K3r = 4.768 K3 = 1
+.param R13 = 1/wo_3
+.param Rb3 = Ra3/a3
+.param a3 = K3/2
+.param Rc3 = Ra3/(1-a3)
+.param Ra1 = Q1/wo_1
+.param Ra2 = Q2/wo_2
+.param Ra3 = Q3/wo_3
+.param Kt = K2r*K3r
+.param RK1 = 1 RK2 = (Kt-1)
+.backanno
+.end

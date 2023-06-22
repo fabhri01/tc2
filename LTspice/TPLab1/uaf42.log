@@ -1,0 +1,58 @@
+Circuit: * C:\users\fabri\Mis Documentos\TC2\LTspice\TPLab1\uaf42.asc
+
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 5.49741
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+Gmin = 5.51716
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 5.50104
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 7.57576%
+Source Step = 15.1515%
+Source Step = 22.7273%
+Source Step = 30.303%
+Source Step = 37.8788%
+vernier = 0.375
+Source Step = 48.8636%
+Source Step = 60.2273%
+Source Step = 71.5909%
+Source Step = 82.9545%
+Source Step = 94.3182%
+vernier = 0.5625
+Source stepping succeeded in finding the operating point.
+
+
+Date: Sat Jun 17 12:22:42 2023
+Total elapsed time: 1.717 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 2060
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 120
+fillins = 1034
+solver = Normal
+Matrix Compiler1:    8390 opcodes
+Matrix Compiler2: 28.41 KB object code size  3.8/2.8/[1.4]
+
