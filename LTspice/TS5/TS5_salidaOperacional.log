@@ -1,12 +1,14 @@
-Circuit: * C:\users\fabri\Mis Documentos\TC2\LTspice\TS5\TS5_SalidaOperacional.asc
+Circuit: * C:\users\fabri\Mis Documentos\TC2\git\tc2\LTspice\TS5\TS5_SalidaOperacional.asc
 
 Ignoring empty pin current: Ix(u1:1)
 Ignoring empty pin current: Ix(u1:2)
 Ignoring empty pin current: Ix(u2:1)
 Ignoring empty pin current: Ix(u2:2)
+Ignoring empty pin current: Ix(u3:1)
+Ignoring empty pin current: Ix(u3:2)
 
-Date: Thu Jun 22 00:27:02 2023
-Total elapsed time: 0.088 seconds.
+Date: Fri Jun 23 00:08:37 2023
+Total elapsed time: 0.130 seconds.
 
 tnom = 27
 temp = 27
@@ -16,7 +18,7 @@ traniter = 0
 tranpoints = 0
 accept = 0
 rejected = 0
-matrix size = 8
-fillins = 9
+matrix size = 9
+fillins = 11
 solver = Normal
 
