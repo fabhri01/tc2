@@ -1,0 +1,15 @@
+* C:\users\fabri\Mis Documentos\TC2\git\tc2\LTspice\TS6\TS6_2.asc
+V1 Vi 0 AC 1 0
+L1 Vi N001 {L1}
+L3 N001 Vo {L3}
+R1 Vo 0 {R}
+C2 N001 0 {C2}
+.ac dec 100 {f*0.1} {f*100}
+.param f = 1
+.param w0 = 2*pi*f
+.param R = 1
+.param L1 = (1.5*R)/w0
+.param C2 = 4/(3*R*w0)
+.param L3 = (0.5*R)/w0
+.backanno
+.end
