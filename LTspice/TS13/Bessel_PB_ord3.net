@@ -1,0 +1,17 @@
+* C:\users\fabri\Mis Documentos\TC2\git\tc2\LTspice\TS13\Bessel_PB_ord3.asc
+V1 N001 0 AC 1 0 Rser=1
+L1 N002 N001 {L1}
+L2 N003 N002 {L2}
+C1 N002 0 {C1}
+R2 N003 0 {R}
+.param f = sqrt(15)/(2*pi)
+.param wo = 2*pi*f
+.param R = 1
+.param C1 = 0.5527/(wo*R)
+.param L1 = (1.255*R)/wo
+.param L2 = (0.192*R)/wo
+.net I(R2) V1
+.ac dec 100 {f*0.1} {f*10}
+* porque wo² = 15 ->
+.backanno
+.end
